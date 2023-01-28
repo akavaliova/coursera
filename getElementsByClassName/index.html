@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p class="special">Here is some text</p>
+    <p>Here is some more text</p>
+    <p class="special">Here is some more text</p>
+
+    <script>
+        let myClass = document.getElementsByClassName("special");
+        for(let i = 0; i <myClass.length; i++){
+            myClass[i].style.color = "red";
+        }
+        //if there is only one paragraph which has class special, we can use myClass[0].style.color = "red"; instead of a loop
+
+    </script>
+    
+</body>
+</html>
